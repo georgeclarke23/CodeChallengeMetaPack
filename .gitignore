@@ -112,7 +112,6 @@ venv.bak/
 
 .vscode/
 
-data
 old
 
 **/*DS_Store

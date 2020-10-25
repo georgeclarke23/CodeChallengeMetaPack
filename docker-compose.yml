@@ -18,6 +18,7 @@ services:
     volumes:
      - ${PWD}/data/mysql:/docker-entrypoint-initdb.d
 
+
   zookeeper:
     image: confluentinc/cp-zookeeper:6.0.0
     container_name: zookeeper
@@ -194,10 +195,11 @@ services:
         apk add jq;
         while [ 1 -eq 1 ];do sleep 60;done
 
-  streaming-app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    depends_on:
-      - mysql
-
+#  streaming-app:
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    depends_on:
+#      - mysql
+#    network_mode: host
+#    restart: always

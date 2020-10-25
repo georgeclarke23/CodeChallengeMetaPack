@@ -69,6 +69,7 @@ INSERT INTO INCIDENTS (
     %s);
 """
 
+
 def main():
     path_to_files = "datasets/"
     mydb = mysql.connector.connect(

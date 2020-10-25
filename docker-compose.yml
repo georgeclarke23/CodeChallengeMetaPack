@@ -123,6 +123,7 @@ services:
       - -c
       - |
         echo "Installing Connector"
+        confluent-hub install --no-prompt confluentinc/kafka-connect-aws-dynamodb:latest
         confluent-hub install --no-prompt debezium/debezium-connector-mysql:1.2.2
         confluent-hub install --no-prompt confluentinc/kafka-connect-elasticsearch:10.0.1
         confluent-hub install --no-prompt neo4j/kafka-connect-neo4j:1.0.9

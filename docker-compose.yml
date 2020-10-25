@@ -156,7 +156,7 @@ services:
       KSQL_KSQL_HIDDEN_TOPICS: '^_.*'
 #      KSQL_KSQL_QUERIES_FILE: 'app.ksql'
     volumes:
-      - $PWD/app.ksql:/app.ksql
+      - $PWD/app:/app
   #      KSQL_PRODUCER_INTERCEPTOR_CLASSES: "io.confluent.monitoring.clients.interceptor.MonitoringProducerInterceptor"
 #      KSQL_CONSUMER_INTERCEPTOR_CLASSES: "io.confluent.monitoring.clients.interceptor.MonitoringConsumerInterceptor"
 

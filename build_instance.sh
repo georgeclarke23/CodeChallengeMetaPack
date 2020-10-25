@@ -29,4 +29,5 @@ sudo apt-get install -y docker-ce docker-compose
 sudo usermod -aG docker $(whoami)
 
 sudo apt-get update && sudo apt-get install -y python3 python3-dev python3-pip python3-virtualenv && sudo rm -rf /var/lib/apt/lists/*
+pip3 install -r requirements.txt
 exit

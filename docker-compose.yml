@@ -168,7 +168,7 @@ services:
       KSQL_KSQL_CONNECT_URL: http://kafka-connect:8083
       KSQL_KSQL_SERVICE_ID: confluent_rmoff_01
       KSQL_KSQL_HIDDEN_TOPICS: '^_.*'
-#      KSQL_KSQL_QUERIES_FILE: 'app.ksql'
+      KSQL_KSQL_QUERIES_FILE: '/app/app.ksql'
     volumes:
       - $PWD/app:/app
   #      KSQL_PRODUCER_INTERCEPTOR_CLASSES: "io.confluent.monitoring.clients.interceptor.MonitoringProducerInterceptor"

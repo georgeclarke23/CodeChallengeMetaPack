@@ -193,3 +193,11 @@ services:
       - |
         apk add jq;
         while [ 1 -eq 1 ];do sleep 60;done
+
+  streaming-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+

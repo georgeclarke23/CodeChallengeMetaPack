@@ -11,6 +11,7 @@ RUN apt-get update -y -qq\
     jq
 
 RUN mkdir -p /opt/datasets
+COPY datasets /opt/datasets
 COPY requirements.txt /opt/
 RUN pip install -r /opt/requirements.txt && pip freeze
 

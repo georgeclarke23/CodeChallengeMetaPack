@@ -2,6 +2,11 @@
 version: '2'
 services:
 # Other systems
+  dynamodb-local:
+    image: amazon/dynamodb-local
+    container_name: dynamodb-local
+    ports:
+      - "8000:8000"
   redis:
     image: redis
     container_name: redis

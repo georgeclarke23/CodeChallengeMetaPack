@@ -1,3 +1,6 @@
 create stream incidents_stream with (kafka_topic='mysql-debezium-asgard.demo.INCIDENTS', VALUE_FORMAT='AVRO');
 
 create stream false_alarm as select * from incidents_stream where INCIDENTGROUP = 'False Alarm';
+
+CREATE TABLE TOTAL_EVENTS_PER_STATION AS SELECT INCIDENTSTATIONGROUND, INCIDENTGROUP, COUNT(*) FROM INCIDENTS_STREAM GROUP BY INCIDENTSTATIONGROUND, INCIDENTGROUP EMIT CHANGES;
+

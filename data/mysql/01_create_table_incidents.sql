@@ -20,8 +20,8 @@ create table INCIDENTS (
     IncGeo_WardCode VARCHAR(50),
     IncGeo_WardName VARCHAR(50),
     IncGeo_WardNameNew VARCHAR(50),
-    Easting_m DECIMAL(11,2),
-    Northing_m DECIMAL(11,2),
+    Easting_m VARCHAR(50),
+    Northing_m VARCHAR(50),
     Easting_rounded INT,
     Northing_rounded INT,
     FRS VARCHAR(50),
@@ -30,8 +30,8 @@ create table INCIDENTS (
     FirstPumpArriving_DeployedFromStation VARCHAR(50),
     SecondPumpArriving_AttendanceTime VARCHAR(50),
     SecondPumpArriving_DeployedFromStation VARCHAR(50),
-    NumStationsWithPumpsAttending DECIMAL(11,2),
-    NumPumpsAttending DECIMAL(11,2),
+    NumStationsWithPumpsAttending VARCHAR(50),
+    NumPumpsAttending VARCHAR(50),
 	CREATE_TS TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	UPDATE_TS TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );

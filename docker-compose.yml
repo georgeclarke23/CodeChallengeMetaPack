@@ -6,7 +6,7 @@ services:
     image: redis
     container_name: redis
     ports:
-      - "9000:6379"
+      - "6379:6379"
 
   mysql:
     # *-----------------------------*

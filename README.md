@@ -33,13 +33,13 @@ You can  provision an EC2 instance that uses Ubuntu operating system, ssh into t
 wget https://github.com/georgeclarke23/CodeChallengeMetaPack/archive/main.zip
 sudo apt-get install unzip 
 unzip main.zip
-cd <unzipped file>
+cd CodeChallengeMetaPack-main
 . ./build_instance.sh
 ```
 
 Once this is done, time to run the application in a container. SSH back into the EC2 instance and execute the following commands 
 ```bash
-cd <the name of the unzipped file>/
+cd CodeChallengeMetaPack-main/
 
 # This command will start the docker containers on the EC2 instance
 . ./build_and_run.sh

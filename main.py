@@ -91,7 +91,8 @@ def main():
                 line_count += 1
             else:
                 row = [0 if i is None or i == 'NULL' else i for i in row]
-                print(f'IncidentStationGround: {row[24]}')
+                row = row[:-1]
+                print(f'IncidentStationGround: {row[0]}')
                 mycursor.execute(QUERY, row)
                 mydb.commit()
                 line_count += 1
